@@ -1,0 +1,38 @@
+h1{
+	margin-left: 220px;
+	  font-size: 5em;
+    
+}
+h2{
+	margin-left: 30px;
+	color: rgb(34, 50, 95);
+    font-size: 5em;
+    font-family: 'Bree Serif', serif;
+    margin: 30px 0 40px 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+}
+img{
+    margin-left: 250px
+}
+#blnch:hover{
+    background-color: whitesmoke
+}
+#o:hover{
+    background-color: orangered;
+}
+#bl:hover{
+    background-color: blue
+}
+#j:hover{
+    background-color: yellow
+}
+#v:hover{
+    background-color: green
+}
+#m:hover{
+    background-color: brown
+}
+#n:hover{
+    background-color: black;
+    color: white
+}
