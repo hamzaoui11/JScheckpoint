@@ -1,0 +1,59 @@
+<html>
+    <head>
+            <script src="aa.js"></script>
+            <title>JScheckpoints</title>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body onload="startTime()">
+        <div id="times"></div>
+        <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById("times").innerHTML = h + ":" + m + ":" + s;
+    var t = setTimeout(function(){ startTime() }, 500);
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+</script>
+
+    
+  
+            <select id="st" onchange="fontf()" class="dropdown">
+                    <option >Arial</option>
+                    <option >Impact</option>
+                    <option >Verdana</option>
+                    <option >Times New Roman</option>
+            </select>
+            <select id="sr" onchange="fontsize()" class="dropdown">
+                    <option  >40</option>
+                    <option  >60</option>
+                    <option  >80</option>
+                    <option  >100</option>
+                
+            </select>      
+
+            <input type="button" value="G" onclick="gras()" class="button">
+            <input type="button" value="I" onclick="italique()" class="button">
+            <input type="button" value="U" onclick="underline()" class="button">
+        <h1> <center>HERE IS THE  </center></h1>
+        <h2><center>TITLE</center></h2>
+    <center>
+        <textarea id="txt"  >
+            
+        </textarea>
+    </center>
+          
+      
+    </body>
+
+</html>
